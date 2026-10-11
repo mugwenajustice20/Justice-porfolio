@@ -1,0 +1,165 @@
+/* General page styling */
+body {
+    background-color: #000000
+    color #f1f5f9;
+    font-family: Arial, sans-serif
+    margin: 0
+    padding: 40px;
+    line-height: 1.7;
+}
+
+/*Main heading*/
+h1{
+    color: #60a5fa;
+    font-size: 42px;
+    text-align: center;
+}
+
+/*Section heading*/
+h2 {
+    color: #38bdf8;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 8px;
+}
+
+/*Paragrapgs*/
+p {
+    font-size:17px;
+}
+
+/*List items*/
+ul { 
+    background-color: #172003
+    padding: 25px 45px;
+    border-radius: 12px;
+}
+
+/*List items*/li {
+                  margin-bottom: 8px;
+}
+
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #334155;
+}
+
+.logo {
+    color: #60a5fa;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: #f1f5f9;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Homepage introduction */
+.hero {
+    max-width: 800px;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 5px;
+}
+
+.hero h2 {
+    border: none;
+}
+
+.eyebrow {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.intro {
+    max-width: 600px;
+    margin: 20px auto 30px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Content sections */
+.content-section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 25px;
+    background-color: #0e3f8f;
+    border-radius: 12px;
+}
+
+/* Interest cards */
+.interest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.interest-card {
+    background-color: #3879f3;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.interest-card h3 {
+    color: #60a5fa;
+}
+
+footer {
+    text-align: center;
+    color: #94a3b8;
+    padding: 25px 0;
+}
+
+/* Make the layout fit smaller screens */
+@media (max-width: 650px) {
+    body {
+        padding: 20px;
+    }
+
+    .navbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .interest-grid {
+        grid-template-columns: 1fr;
+    }
+}
